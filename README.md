@@ -46,6 +46,10 @@ Dataset URL : [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credi
 ## Getting Started
 Instructions on how to set up the project, including environment setup, data preparation, and steps to run the model.
 
+1. You can run the notebook on a
+   Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sample/blob/master/sample.ipynb).
+2.  You can execute the notebook on a local machine by running it locally via docker.
+
 ## License
 Details on the license under which the project is released, typically an open-source license.
 

@@ -1,0 +1,22 @@
+version: "3.9"                                                                                             
+                                                                                                           
+services:                                                                                                  
+  pyspark:                                                                                                 
+    image: jupyter/pyspark-notebook:latest                                                                                                                                           
+    platform: linux/arm64                                                                                  
+    ports:                                                                                                 
+      - "8889:8888"                                                                               
+    volumes:                                                                                               
+      - "./data:/home/jovyan/notebook"                                                                     
+      - "./local:/home/jovyan/"                                                                            
+      - "./files:/opt/files"                                                                               
+    command: "start-notebook.sh --NotebookApp.token="                                                      
+    networks:                                                                                              
+      - net                                                                                                
+                                                                                                   
+networks:                                                                                                  
+  net:                                                                                                     
+    ipam:                                                                                                  
+      driver: default                                                                                      
+      config:
+        - subnet: 10.90.1.0/24                                                                             
