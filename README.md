@@ -41,6 +41,7 @@ Dataset URL : [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credi
 ## Technology Stack
 - Python (with libraries such as pandas, scikit-learn, numpy)
 - Jupyter Notebooks for interactive development
+- Streamlit (Data Product)
 - Docker
 
 ## Getting Started
